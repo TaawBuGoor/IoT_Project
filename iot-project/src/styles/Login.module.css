@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+.login{
+    background-color: white;
+    width: 750px;
+    height: 650px;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    box-shadow: 1px 1px 10px #0000002d;
+}
+.login .container{
+    width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    color: dodgerblue;
+    margin-bottom: 50px;
+}
+.input_wrapper{
+    position: relative;
+    width: 300px;
+}
+.input{
+    outline: none;
+    border: 1px solid gray;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+.input_wrapper .label{
+    color: gray;
+    position: absolute;
+    top: 50%;
+    padding-left: 10px;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.input_wrapper .input:valid ~ .label,
+.input_wrapper .input:focus ~ .label{
+    color: dodgerblue;
+    transform: translateX(10px) translateY(-37px);
+    transition: all ease .5s;
+    font-size: 14px;
+    background-color: white;
+    padding-left: 0px;
+}
+.input_wrapper .input:focus{
+    border: 2px solid dodgerblue;
+}
+.checkbox{
+    cursor: pointer;
+    vertical-align: middle;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+}
+.forgot{
+    text-decoration: none;
+    color: black;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 50px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: transparent;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+.registerLink{
+    margin-top: -5%;
+    text-align: right;
+}
+.registerLink a{
+    text-decoration: none;
+    color: black;
+}
+.registerLink:hover{
+    text-decoration: underline;
+}
