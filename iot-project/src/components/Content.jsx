@@ -1,8 +1,8 @@
-import '../styles/Content.module.css'
+import '../styles/Content.css'
 import Navbar from './Navbar';
 function Content(){
     return(
-        <div className={style.content}>
+        <div className="content">
            <Navbar />
         </div>
     )

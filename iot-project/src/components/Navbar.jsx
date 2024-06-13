@@ -1,4 +1,4 @@
-import '../styles/Navbar.module.css'
+import '../styles/Navbar.css'
 
 function Navbar(){
     return(

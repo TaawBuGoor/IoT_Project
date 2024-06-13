@@ -1,27 +1,27 @@
-import '../styles/Login.module.css'
+import '../styles/Login.css'
 
 function Login(){
     return(
-        <div className={styles.login}>
+        <div className='login'>
             <h1>LogIn</h1>
-            <div className={styles.container}>
-                <div className={styles.input_wrapper}>
-                    <input type='text' className={styles.input} required />
-                    <span className={styles.label}>Username *</span>
+            <div className='container'>
+                <div className='input_wrapper'>
+                    <input type='text' className='input' required />
+                    <span className='label'>Username *</span>
                 </div>
-                <div className={styles.input_wrapper}>
-                    <input type='password' className={styles.input} required />
-                    <span className={styles.label}>Password *</span>
+                <div className='input_wrapper'>
+                    <input type='password' className='input' required />
+                    <span className='label'>Password *</span>
                 </div>
-                <div className={styles.remember}>
+                <div className='remember'>
                     <div>
-                        <input type='checkbox' className={styles.checkbox}/>
+                        <input type='checkbox' className='checkbox'/>
                         <label for='text'>Remember me</label>
                     </div>
-                    <a href='me' className={styles.forgot}>Forgot Password ?</a>
+                    <a href='me' className='forgot'>Forgot Password ?</a>
                 </div>
-                <button className={styles.btn}>LogIn</button>
-                <div className={styles.registerLink}>
+                <button className='btn'>LogIn</button>
+                <div className='registerLink'>
                     <a href='me'>Create an account ?</a>
                 </div>
             </div>
