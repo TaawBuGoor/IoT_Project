@@ -4,25 +4,45 @@
     font-family: 'Poppins';
 }
 .login{
-    background-color: white;
+    background-image: url(../assets/hero-bg-abstract.jpg);
+    display: grid;
+    min-height: 100vh;
+    box-shadow: 1px 1px 10px #0000002d;
+  }
+.login .container{
+    margin: auto;
     width: 750px;
     height: 650px;
     border-radius: 10px;
-    display: grid;
-    place-content: center;
-    place-items: center;
-    box-shadow: 1px 1px 10px #0000002d;
+    background-color: white;
+    display: flex;
 }
-.login .container{
-    width: 320px;
-    margin: auto;
+.container_left{
+    width: 350px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: url(../assets/backgroundPage-eff4e6a9.jpg);
+}
+.container_right{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     gap: 20px;
+    width: 400px;
+    height: 600px;
+    padding: 0px 20px;
 }
 h1{
     color: dodgerblue;
     margin-bottom: 50px;
+    text-align: center;
 }
 .input_wrapper{
     position: relative;
@@ -64,7 +84,6 @@ h1{
 }
 .remember{
     display: flex;
-    justify-content: space-between;
 }
 .forgot{
     text-decoration: none;
@@ -89,13 +108,10 @@ h1{
     color: dodgerblue;
     border: 1px solid dodgerblue;
 }
-.registerLink{
-    margin-top: -5%;
-    text-align: right;
-}
 .registerLink a{
     text-decoration: none;
     color: black;
+    text-align: right;
 }
 .registerLink:hover{
     text-decoration: underline;

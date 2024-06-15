@@ -1,11 +1,15 @@
 import {Menu} from 'antd'
-import { HomeOutlined, SettingOutlined, LogoutOutlined, AreaChartOutlined, AppstoreOutlined } from '@ant-design/icons'
+import { HomeOutlined, SettingOutlined, LogoutOutlined, AreaChartOutlined, AppstoreOutlined, UserOutlined } from '@ant-design/icons'
 
 function ListMenu() {
   return (
     <Menu className='menu'>
       <Menu.Item key='Accueil' icon=<HomeOutlined/>>
         Home
+      </Menu.Item>
+
+      <Menu.Item key='Utilisateurs' icon=<UserOutlined/>>
+        Utilisateurs
       </Menu.Item>
 
       <Menu.Item key='Dashboard' icon=<AppstoreOutlined/>>
