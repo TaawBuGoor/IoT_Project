@@ -1,3 +1,25 @@
 .content{
-    background-color: white;
+    width: 100%;
+    padding: 10px 50px;
+}
+.content h1{
+    color: #27374D;
+}
+.headline{
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headline div{
+    position: relative;
+}
+.headline div input{
+    width: 200px;
+    background-color: #DDE6ED;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
 }

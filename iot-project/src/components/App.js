@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import '../styles/App.module.css';
 import './Login'
 import Login from './Login';
-import Content from './Content';
+import Main from './Main';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const handleLogin = () => {
     setIsLoggedIn(true);
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      {isLoggedIn ? <Content /> : <Login onLogin={handleLogin}/>}
+      {isLoggedIn ? <Main /> : <Login onLogin={handleLogin}/>}
     </div>
   );
 }

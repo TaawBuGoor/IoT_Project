@@ -1,33 +1,50 @@
-import {Menu} from 'antd'
-import { HomeOutlined, SettingOutlined, LogoutOutlined, AreaChartOutlined, AppstoreOutlined, UserOutlined } from '@ant-design/icons'
-
+import { HiOutlineLogout } from "react-icons/hi";
+import { HiHome } from "react-icons/hi2";
+import { IoSettingsOutline } from "react-icons/io5";
+import { MdOutlineManageAccounts } from "react-icons/md";
+import { LuUser } from "react-icons/lu";
+import { IoStatsChart } from "react-icons/io5";
 function ListMenu() {
   return (
-    <Menu className='menu'>
-      <Menu.Item key='Accueil' icon=<HomeOutlined/>>
-        Home
-      </Menu.Item>
+    <div className="menu">
+      <div className='logo'>
+        <h1>Iot</h1>
+      </div>
 
-      <Menu.Item key='Utilisateurs' icon=<UserOutlined/>>
-        Utilisateurs
-      </Menu.Item>
+      <div className='menu-list'>
+        <a href='/Home' className='item'>
+          <HiHome className='icons'/>
+          <span>Home</span>
+        </a>
 
-      <Menu.Item key='Dashboard' icon=<AppstoreOutlined/>>
-        Dashboard
-      </Menu.Item>
+        <a href='/Keys Management' className='item'>
+          <MdOutlineManageAccounts className='icons'/>
+          <span>Keys Management</span>
+        </a>
 
-      <Menu.Item key='Statistiques' icon=<AreaChartOutlined/>>
-        Statistiques
-      </Menu.Item>
+        <a href='/Statistics' className='item'>
+          <IoStatsChart className='icons'/>
+          <span>Statistics</span>
+        </a>
 
-      <Menu.Item key='Paramètres' icon=<SettingOutlined/>>
-        Paramètres
-      </Menu.Item>
+        <a href='/Users' className='item'>
+          <LuUser className='icons'/>
+          <span>Users</span>
+        </a>
+        
+        {/* <div className="bottom"> */}
+          <a href='/Settings' className='item'>
+            <IoSettingsOutline className='icons'/>
+            <span>Settings</span>
+          </a>
 
-      <Menu.Item key='Deconnexion' icon=<LogoutOutlined/>>
-        Deconnexion
-      </Menu.Item>
-    </Menu>
+          <a href='/#' className='item'>
+            <HiOutlineLogout className='icons'/>
+            <span>LogOut</span>
+          </a>
+        {/* </div> */}
+      </div>
+    </div>
   )
 }
 

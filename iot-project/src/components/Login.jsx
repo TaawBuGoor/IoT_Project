@@ -1,5 +1,5 @@
 import '../styles/Login.css'
-import logo from '../assets/iot-key.jpg'
+import logo from '../assets/IoT-implement-1.jpg'
 
 function Login(){
     return(
@@ -29,7 +29,7 @@ function Login(){
                             </div>
                             <a href='me' className='forgot'>Forgot Password ?</a>
                         </div>
-                        <button className='btn'>LogIn</button>
+                        <button className='btn' type='submit'>LogIn</button>
                         <div className='registerLink'>
                             <a href='me'>Create an account ?</a>
                         </div>
