@@ -4,15 +4,17 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { LuUser } from "react-icons/lu";
 import { IoStatsChart } from "react-icons/io5";
+import { TbLayoutSidebarLeftCollapse } from "react-icons/tb";
+
 function ListMenu() {
   return (
     <div className="menu">
       <div className='logo'>
-        <h1>Iot</h1>
+        <TbLayoutSidebarLeftCollapse className='hide-icon' />
       </div>
 
       <div className='menu-list'>
-        <a href='/Home' className='item'>
+        <a href='/Home' className='item active'>
           <HiHome className='icons'/>
           <span>Home</span>
         </a>

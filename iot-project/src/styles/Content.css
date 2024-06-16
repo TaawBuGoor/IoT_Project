@@ -3,7 +3,7 @@
     padding: 10px 50px;
 }
 .content h1{
-    color: #27374D;
+    color: #27374D7A;
 }
 .headline{
     color: gray;
@@ -11,15 +11,29 @@
     justify-content: space-between;
     align-items: center;
 }
-.headline div{
+.headline .search-box{
     position: relative;
+}
+.search-box .search-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+
 }
 .headline div input{
     width: 200px;
     background-color: #DDE6ED;
-    padding: 10px;
+    padding: 10px 35px 10px 10px;
     border: none;
     outline: none;
     border-radius: 5px;
     font-size: 16px;
+}
+.user-icon{
+    font-size: 40px;
+    color: #27374D7A;
+    cursor: pointer;
 }
