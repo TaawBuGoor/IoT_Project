@@ -1,6 +1,7 @@
 import '../styles/Content.css'
 import { FiSearch } from "react-icons/fi";
 import { FaUserCircle } from "react-icons/fa";
+import Home from './Home'
 
 function Content() {
   return (
@@ -13,6 +14,9 @@ function Content() {
             </div>
             <FaUserCircle className='user-icon'/>
         </div>
+
+        
+        <Home />
     </div>
   )
 }

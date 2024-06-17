@@ -7,10 +7,19 @@ import { IoStatsChart } from "react-icons/io5";
 import { TbLayoutSidebarLeftCollapse } from "react-icons/tb";
 
 function ListMenu() {
+  let menu = document.querySelector('.menu');
+  let span = document.querySelectorAll('span');
+  // let hideIcon = document.querySelectorAll('.hide-icon');
+
+  const isCliked = () => {
+    span.style.display = 'none';
+    menu.style.width = '30px'
+  }
+
   return (
     <div className="menu">
       <div className='logo'>
-        <TbLayoutSidebarLeftCollapse className='hide-icon' />
+        <TbLayoutSidebarLeftCollapse className='hide-icon' onclick={isCliked}/>
       </div>
 
       <div className='menu-list'>

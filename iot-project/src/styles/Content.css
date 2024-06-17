@@ -1,3 +1,4 @@
+/*Content.jsx style*/
 .content{
     width: 100%;
     padding: 10px 50px;
@@ -21,7 +22,11 @@
     transform: translateY(-50%);
     font-size: 20px;
     cursor: pointer;
-
+}
+.search-box .search-icon:hover{
+    color: #27374D;
+    font-size: 22px;
+    transition: all ease 0.25s;
 }
 .headline div input{
     width: 200px;
@@ -36,4 +41,38 @@
     font-size: 40px;
     color: #27374D7A;
     cursor: pointer;
+}
+
+
+/*Home.jsx style*/
+.home table{
+    width: 100%;
+    border: 2px solid #DDE6ED;
+    border-radius: 10px;
+    text-align: center;
+}
+.home .add-key-btn{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+}
+.home .add-btn{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #27374D;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.home .add-btn:hover{
+    background-color: dodgerblue;
+    color: white;
+    transition: all ease 0.25s;
+}
+.home .add-icon{
+    vertical-align: middle;
+    font-size: 25px;
+    margin-right: 5px;
 }

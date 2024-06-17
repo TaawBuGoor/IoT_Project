@@ -1,7 +1,9 @@
+/*Main.jsx style*/
 .main{
     display: flex;
 }
 
+/*Navbar.jsx style*/
 .logo{
     width: 100%;
     padding: 10px;
