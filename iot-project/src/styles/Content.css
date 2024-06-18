@@ -44,12 +44,38 @@
 }
 
 
+/*Action.jsx style*/
+.action .update-btn{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #27374D;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.action .remove-btn{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
 /*Home.jsx style*/
 .home table{
     width: 100%;
     border: 2px solid #DDE6ED;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 1px 1px 5px #0000002D;
+    /* border-collapse: collapse; */
 }
 .home .add-key-btn{
     margin-bottom: 20px;
@@ -61,7 +87,7 @@
     outline: none;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: #27374D;
+    background-color: dodgerblue;
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -75,4 +101,12 @@
     vertical-align: middle;
     font-size: 25px;
     margin-right: 5px;
+}
+.home .table th{
+    padding-bottom: 10px;
+    color: #27374D;
+}
+.table th, .table td {
+    /* border: 1px solid #ddd; */
+    padding: 10px;
 }
